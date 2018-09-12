@@ -10,12 +10,18 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>GroupWare</title>
 
-<link rel="stylesheet" href="<%=cp%>/resource/css/style.css" type="text/css">
-<link rel="stylesheet" href="<%=cp%>/resource/css/layout.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Jua&amp;subset=korean" rel="stylesheet">
 
 <link rel="stylesheet" href="<%=cp%>/resource/jquery/css/smoothness/jquery-ui.min.css" type="text/css">
+
+<link rel="stylesheet" href="<%=cp%>/resource/bootstrap/css/bootstrap-theme.css" type="text/css">
+<link rel="stylesheet" href="<%=cp%>/resource/bootstrap/css/bootstrap.css" type="text/css">
+
+<link rel="stylesheet" href="<%=cp%>/resource/css/layout.css?ver=1" type="text/css">
+<link rel="stylesheet" href="<%=cp%>/resource/css/style.css" type="text/css">
+
 <script type="text/javascript" src="<%=cp%>/resource/jquery/js/jquery-1.12.4.min.js"></script>
 
 </head>
@@ -29,12 +35,14 @@
 
 	<div class="side">
 	    <tiles:insertAttribute name="side"/>
+	    <div>
+		   	<tiles:insertAttribute name="sidetabs"/>
+		</div>
 	</div>
 	
 	<div class="body">
     	<tiles:insertAttribute name="body"/>
 	</div>
-	
 </div>
 
 <div class="footer">

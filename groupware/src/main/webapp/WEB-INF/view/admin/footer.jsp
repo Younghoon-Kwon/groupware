@@ -6,4 +6,4 @@
 	String cp=request.getContextPath();
 %>
 
-footer
+Access Terms
